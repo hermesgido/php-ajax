@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+
+    <form id="uploadForm" enctype="multipart/form-data" class="mb-3">
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="fileInput" name="file" accept="image/*">
+            <label class="custom-file-label" for="fileInput">Choose file</label>
+        </div>
+        <button type="button" class="btn btn-primary mt-2" onclick="uploadFile()">Upload</button>
+    </form>
+
+    <div id="imageContainer">
+        <img id="uploadedImage" src="" alt="Uploaded Image" class="img-fluid">
+        <div id="placeholderText" class="text-muted mt-2">No image uploaded</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
